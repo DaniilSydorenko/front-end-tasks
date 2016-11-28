@@ -19,8 +19,8 @@ var add = function () {
 		sec = 0;
 	}
 
-	sField.innerText = (sec.toString().length == 1) ? "0" + sec : sec;
-	mField.innerText = (min.toString().length == 1) ? "0" + min : min;
+	sField.textContent = (sec.toString().length == 1) ? "0" + sec : sec;
+	mField.textContent = (min.toString().length == 1) ? "0" + min : min;
 
 	runTime();
 };
@@ -37,8 +37,8 @@ stopBtn.onclick = function () {
 };
 
 clearBtn.onclick = function () {
-	sField.innerText = "00";
-	mField.innerText = "00";
+	sField.textContent = "00";
+	mField.textContent = "00";
 	sec = 0; min = 0;
 };
 
